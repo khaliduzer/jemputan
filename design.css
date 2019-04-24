@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+	padding:0;
+}
+
+.header{
+	height: 100vh;
+}
+
+.video-cover{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+@media screen (min-aspect-ratio:16/9){
+	.video-cover
+	{
+	width: 100%;
+	height: auto;
+	}
+}
+
+@media screen (max-aspect-ratio:16/9){
+	.video-cover
+	{
+	width: auto;
+	height: 100%;
+	}
+}
+
+.msg{
+	position: relative;
+	text-align: center;
+	font-family: 'Merienda', cursive;
+	color: #fff;
+	top: 150px;
+}
+
+.msg h1{
+	font-size: 30px;
+	text-shadow: 4px 4px 4px #aaa;
+	font-weight: 100;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+
+
+.msg p{
+	font-size: 40px;
+	text-shadow: 4px 4px 4px #aaa;
+	font-weight: 100;
+	letter-spacing: 5px;
+	margin: 5px;
+}
+
+.detail{
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	font-family: 'Roboto', cursive;
+	top: 10px;
+	margin-bottom: 30px;
+}
+
+.detail2{
+	position: relative;
+	text-align: center;
+	font-family: 'Roboto', cursive;
+	color: blue;
+	text-shadow: 4px 4px 4px #aaa;
+	top: 10px;
+	margin-bottom: 50px;
+}
+}
+
+.countdown{
+	font-family: arial; 
+	text-transform: uppercase;
+}
+
+.countdown > div{
+	display: inline-block;
+}
+
+.countdown > div > span {
+	display: block;
+	text-align: center;
+}
+.countdown-container{
+	margin:0 3px;
+}
+
+.countdown-container .countdown-heading{
+	font-size: 11px; 
+	margin: 3px; 
+	color: #666
+}
+
+.countdown-container .countdown-value{
+	font-size: 50px; 
+	background: #6273c9; 
+	padding:10px; 
+	color:#fff; 
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.4)
+
+}
+
+
+
+
+.peta{
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 100px 0 0;
+}
+
+.mapouter{
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	position: relative;
+
+}
+
+.mapouter iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-aspect-ratio:16/9){
+	.mapouter
+	{
+	width: 100%;
+	height: auto;
+	}
+}
+
+@media (max-aspect-ratio:16/9){
+	.mapouter
+	{
+	width: auto;
+	height: 100%;
+	}
